@@ -34,14 +34,15 @@ $memb3[1] = ['name' => 'ㅁㄴ', 'id'=>'mn'];
 $memb3[2] = ['name' => 'ㄷㄹ', 'id'=>'dr'];
 
 foreach($memb3 as $i => $v){
-    foreach($memb3 as $i2 => $v2){
+    foreach($v as $i2 => $v2){
         if($i2 == 'name')
             echo "{$v2}님의 아이디는 : ";
         if($i2 == 'id')
             echo "{$v2}입니다.";
     }
+    echo'<br>';
 }
-echo'<br>';
+
 ?>
 
 
